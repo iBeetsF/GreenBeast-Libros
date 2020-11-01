@@ -47,3 +47,15 @@ header h1{
     margin-top:60px;
     font-family: Impact, Charcoal, sans-serif;
 }
+input[type=text]{
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+}
+input[type=text]:focus{
+    border-color:dodgerblue;
+    box-shadow: 0 0 8px 0 mediumseagreen;
+}
