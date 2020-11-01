@@ -30,3 +30,20 @@ html{
 .redfont{
     color:rgb(185, 46, 46);
 }
+
+header{
+    background-color:#87A330;
+    background-image: url("../images/biblio.jpg");
+    background-size: 100%;
+    background-position: center;
+    height:400px;
+    padding: 20px;
+    text-align:center;
+}
+header h1{
+    color:rgb(185, 46, 46);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:60px;
+    font-family: Impact, Charcoal, sans-serif;
+}
