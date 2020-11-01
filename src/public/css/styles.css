@@ -1,0 +1,21 @@
+/* Archivo de estilos para la personalización de la página web */
+
+html{
+
+}
+.citron-bg{
+    color:white;
+    background-color:#87A330
+
+}
+
+.impact{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.text-center{
+    text-align: center;
+}
+.double-border{
+    border-style:double;
+}
