@@ -9,6 +9,14 @@ html{
 
 }
 
+.dark-green{
+    color:white;
+    background-color:#243010
+}
+.times-nr {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .impact{
     font-family: Impact, Charcoal, sans-serif;
 }
@@ -18,4 +26,9 @@ html{
 }
 .double-border{
     border-style:double;
+}
+
+
+.normal-border{
+
 }
