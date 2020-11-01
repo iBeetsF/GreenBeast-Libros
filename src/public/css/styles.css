@@ -1,12 +1,11 @@
 /* Archivo de estilos para la personalización de la página web */
 
 html{
-
+    background-color:#87A330
 }
 .citron-bg{
-    color:rgb(185, 46, 46);
+    color:white;
     background-color:#87A330
-
 }
 
 .dark-green{
@@ -28,7 +27,6 @@ html{
     border-style:double;
 }
 
-
-.normal-border{
-
+.redfont{
+    color:rgb(185, 46, 46);
 }
