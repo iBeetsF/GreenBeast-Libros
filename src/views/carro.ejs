@@ -1,4 +1,4 @@
-<%- include("template/cabecera" , {tituloWeb: 'Greenbeast Libros'}) %>
+<%- include("template/cabecera" , {tituloWeb: 'Carrito de compra'}) %>
 <body class="dark-green">
 <div class="text-center times-nr">
     <h1>Carrito</h1>
@@ -13,7 +13,7 @@
 </div>
 <div class="container">
     <table class="table white" id="tabla">
-        <thead class="thead-inverse"
+        <thead class="thead-inverse">
         <tr>
             <th>Nombre </th>
             <th>Precio </th>
@@ -22,12 +22,8 @@
     </table>
 </div>
 <div>
-    <h2 class="text-center"><button id="boton" class="btn btn-success"type="reset" onclick="exito();">Comprar</button>
-        <button id="boton" class="btn btn-success"type="reset" onclick="exito2();">Comprar Express</button>
-    </h2>
-    <p class="text-center"id="exito">
-
-    </p>
+    <div class="text-center"> <a href="/pago" target="_blank">Comprar ahora!</a>
+    </div>
 </div>
 <script>
     function guardar(){
@@ -45,13 +41,10 @@
         Carrito.push(nuevoLibro);
         document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoLibro.nombre+'</td><td>'+nuevoLibro.precio+'</td></tbody>';
     }
-    function exito(){
-        document.getElementById("exito").innerHTML = "Su compra ha sido exitosa";
 
-    }
-    function exito2(){
-        document.getElementById("exito").innerHTML = "Su compra express ha sido exitosa";
-    }
 </script>
+<div class="footer">
+    <p> Derechos reservados @Greenbeast  |  Contáctanos -> Correo: greenbeast.libros@gmail.com    Teléfono: 01-800-GREEN</p>
+</div>
 </body>
 </html>

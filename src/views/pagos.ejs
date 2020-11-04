@@ -1,0 +1,47 @@
+<%- include("template/cabecera" , {tituloWeb: 'pago'} ) %>
+
+<body class="dark-green">
+    <div class="container py-2 dark-green">
+        <form>
+            <h1>
+                Ingrese sus datos de pago.
+            </h1>
+            <input id="nombret" type="text" placeholder="Ingrese Nombre de tarjeta habiente" class="form-control my-2">
+            <input id="numt" type="number" placeholder="Ingrese número de tarjeta" class="form-control my-2">
+            <input id="vigencia" type="text" placeholder="Ingrese vigencia de la tarjeta" class="form-control my-2">
+            <input id="cvv" type="number" placeholder="Ingrese Cvv de la tarjeta" class="form-control my-2">
+            <input id="País" type="text" placeholder="Ingrese su País" class="form-control my-2">
+            <input id="ciudad" type="text" placeholder="Ingrese su ciudad" class="form-control my-2">
+            <input id="domicilio" type="text" placeholder="Ingrese su domicilio" class="form-control my-2">
+            <p> Nota: Tiempo estimado Entrega normal.
+            <li>Latinoamérica: 5 días.</li> <li>Norteamérica 4 días. </li><li>Europa: 7 días </li> <li>Otro: 7 días o más.</li>
+                *Sujeto a cambios*
+            </p>
+            <p>  Tiempo estimado Entrega Express.
+            <li>Latinoamérica: 2 días o menos.</li> <li>Norteamérica 1 día. </li><li>Europa: 3 días o menos </li> <li>Otro: menos de 7 días </li>
+            *Sujeto a cambios*
+            </p>
+            <button id="boton0" class="btn btn-success"type="reset" onclick="exito0();">No soy un robot.</button>
+            <button id="boton1" class="btn btn-success"type="reset" onclick="exito();">Comprar</button>
+            <button id="boton2" class="btn btn-success"type="reset" onclick="exito2();">Comprar Express</button>
+            <p class="text-center"id="exito"></p>
+        </form>
+
+    <script>
+        function exito0(){
+                document.getElementById("exito").innerHTML = "Usted no es un robot.";
+        }
+        function exito(){
+
+            document.getElementById("exito").innerHTML = "Su compra ha sido exitosa";
+
+        }
+        function exito2(){
+            document.getElementById("exito").innerHTML = "Su compra express ha sido exitosa";
+        }
+    </script>
+        <div class="footer">
+            <p> Derechos reservados @Greenbeast  |  Contáctanos -> Correo: greenbeast.libros@gmail.com    Teléfono: 01-800-GREEN</p>
+        </div>
+</body>
+</html>

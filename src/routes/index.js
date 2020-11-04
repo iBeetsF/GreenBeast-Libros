@@ -5,6 +5,9 @@ module.exports = app => {
     app.get('/carrito', (req, res) => {
         res.render("carro");
     });
+    app.get('/pago', (req, res) => {
+        res.render("pagos");
+    });
     app.get('/', (req, res) => {
         res.render("home");
     });
