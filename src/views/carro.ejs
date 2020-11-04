@@ -1,0 +1,57 @@
+<%- include("template/cabecera" , {tituloWeb: 'Greenbeast Libros'}) %>
+<body class="dark-green">
+<div class="text-center times-nr">
+    <h1>Carrito</h1>
+</div>
+<div class="container py-2 citron-bg">
+    <p class="lead">Ingrese el libro a comprar</p>
+    <form>
+        <input id="nombre" type="text" placeholder="Ingrese Libro" class="form-control my-2">
+        <input id="precio" type="number" placeholder="Ingrese Precio" class="form-control my-2">
+        <button id="boton" class="btn btn-success"type="reset" onclick="guardar();">Añadir al carrito</button>
+    </form>
+</div>
+<div class="container">
+    <table class="table white" id="tabla">
+        <thead class="thead-inverse"
+        <tr>
+            <th>Nombre </th>
+            <th>Precio </th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<div>
+    <h2 class="text-center"><button id="boton" class="btn btn-success"type="reset" onclick="exito();">Comprar</button>
+        <button id="boton" class="btn btn-success"type="reset" onclick="exito2();">Comprar Express</button>
+    </h2>
+    <p class="text-center"id="exito">
+
+    </p>
+</div>
+<script>
+    function guardar(){
+        function Libro(nombre,precio){
+            this.nombre=nombre;
+            this.precio=precio;
+        }
+        var nombreGuardar = document.getElementById("nombre").value;
+        var precioGuardar = document.getElementById("precio").value;
+        nuevoLibro = new Libro(nombreGuardar,precioGuardar);
+        agregar()
+    }
+    var Carrito=[];
+    function agregar(){
+        Carrito.push(nuevoLibro);
+        document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoLibro.nombre+'</td><td>'+nuevoLibro.precio+'</td></tbody>';
+    }
+    function exito(){
+        document.getElementById("exito").innerHTML = "Su compra ha sido exitosa";
+
+    }
+    function exito2(){
+        document.getElementById("exito").innerHTML = "Su compra express ha sido exitosa";
+    }
+</script>
+</body>
+</html>
